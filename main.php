@@ -12,6 +12,7 @@ $teamPreference = new App\TeamPreferences(__DIR__);
 if (!file_exists(__DIR__ . "/teamPreferences.yaml")) {
     $teamPreference->generateRandomSetting(AMOUNT_OF_MEMBER, TEAM_SIZE);
 }
+$teamPreference->load();
 
 
 $linkManager   = new App\LinkManager;

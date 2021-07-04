@@ -18,6 +18,11 @@ class TeamPreferences
     private $yamlPath;
 
     /**
+     * @var array
+     */
+    private $yaml;
+
+    /**
      * TeamPreferences constructor.
      *
      * @param string $rootFolder
